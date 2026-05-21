@@ -1,0 +1,34 @@
+# Core agent framework
+deepagents>=0.4.12
+langgraph>=1.1.5
+langgraph-checkpoint-sqlite>=3.0.3
+langchain>=1.2.11
+langchain-community>=0.3.0
+langchain-ollama>=0.3.0
+
+# Local LLM interface
+litellm>=1.40.0
+ollama>=0.3.0
+
+# Browser automation (after pip install, run: playwright install chromium)
+playwright>=1.45.0
+
+# UI automation (UI-TARS style desktop interaction)
+pyautogui>=0.9.54
+pillow>=10.0.0
+opencv-python>=4.9.0
+
+# Local video/audio transcription
+faster-whisper>=1.0.0
+
+# File handling
+python-docx>=1.1.0
+pypdf>=4.0.0
+openpyxl>=3.1.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.7.0
+rich>=13.7.0
+typer>=0.12.0
+httpx>=0.27.0

@@ -2,8 +2,6 @@
 
 A fully local, offline-capable AI agent that can control your desktop, browser, files, emails, calendar, LinkedIn, Teams, and more — all through natural language. No cloud. No API keys. Everything runs on your machine using Ollama.
 
----
-
 ## What It Is
 
 This is a multi-step autonomous agent powered by local LLMs (via Ollama). You type a task in plain English, and the agent figures out which tools to use, executes them step by step, and completes the task — without you doing anything else.
@@ -12,7 +10,6 @@ It uses:
 - **qwen2.5-coder:7b** — the main reasoning and code generation model
 - **llava:7b** — the vision model for understanding images and UI redesign tasks
 
----
 
 ## What It Can Do
 
@@ -30,8 +27,6 @@ It uses:
 | **Media** | Transcribe video/audio files locally using Whisper |
 | **Vision** | Describe images, match UI designs from reference images |
 | **Shell** | Execute any shell command |
-
----
 
 ## Project Structure
 
@@ -65,8 +60,6 @@ AutonomousAgent/
 └── .env                     # Your local configuration
 ```
 
----
-
 ## Requirements
 
 ### System Requirements
@@ -81,8 +74,6 @@ AutonomousAgent/
 - Microsoft account (for Outlook + Teams)
 - Google account (for Gmail + Google Calendar)
 - LinkedIn account
-
----
 
 ## Installation
 
@@ -162,8 +153,6 @@ A browser window will open with tabs for each service. Log in to all of them, th
 
 > You only need to do this once. Re-run it if your sessions expire.
 
----
-
 ## How to Run
 
 ### Interactive Chat Mode
@@ -199,8 +188,6 @@ python main.py chat --thread my-session
 python main.py run "Summarize what we discussed" --thread my-session
 ```
 
----
-
 ## How It Works
 
 1. You type a task in natural language
@@ -212,8 +199,6 @@ python main.py run "Summarize what we discussed" --thread my-session
 7. The loop continues until the task is complete (max 50 iterations)
 
 For image/vision tasks (e.g. "redesign this page to match this image"), `llava:7b` is called to describe the reference image before the main model generates the code.
-
----
 
 ## Example Tasks
 
@@ -229,8 +214,6 @@ Create a Word document with a formal leave application and save to Desktop
 Search the web for latest AI news and summarize it
 Open VS Code
 ```
-
----
 
 ## Troubleshooting
 
@@ -265,8 +248,6 @@ sudo apt install fswebcam ffmpeg
 sudo apt install python3-tk python3-dev
 ```
 
----
-
 ## Dependencies Overview
 
 | Package | Purpose |
@@ -287,8 +268,6 @@ sudo apt install python3-tk python3-dev
 | `rich` | Beautiful terminal output |
 | `typer` | CLI interface |
 | `python-dotenv` | Load `.env` configuration |
-
----
 
 ## Notes
 
